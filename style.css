@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 10px;
+}
+body {
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.container {
+  padding: 2em;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 1px 5px 10px 5px #dadada;
+}
+section.container div {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem auto;
+}
+section.container div label {
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: capitalize;
+  user-select: none;
+}
+section.container div input {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+}
+section.container div input:read-only {
+  background: #0f6ecd;
+  border: none;
+  outline: none;
+  color: #ffffff;
+}
+section.container div input::-webkit-inner-spin-button,
+section.container div input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+button.btn {
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  background-color: #0d61e7;
+  color: #ffffff;
+}
+button.btn:hover {
+  background-color: hsl(217, 94%, 52%);
+}
